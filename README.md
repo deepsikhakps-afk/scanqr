@@ -64,7 +64,7 @@ scanqr/
 ├── script.js    # QR generation + camera/image scanning logic
 └── README.md
 ```
-# screenshots
+# screenshot
 ![alt text](image.png)
 
 ## How It Works
