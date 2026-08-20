@@ -64,7 +64,7 @@ scanqr/
 ├── script.js    # QR generation + camera/image scanning logic
 └── README.md
 ```
-
+# screenshots
 ## How It Works
 
 - **Generate:** the `qrcode` library renders the QR matrix directly onto a `<canvas>`, styled with your chosen color/size, exportable as PNG via `canvas.toDataURL()`.
