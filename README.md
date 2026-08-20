@@ -65,6 +65,8 @@ scanqr/
 └── README.md
 ```
 # screenshots
+![alt text](image.png)
+
 ## How It Works
 
 - **Generate:** the `qrcode` library renders the QR matrix directly onto a `<canvas>`, styled with your chosen color/size, exportable as PNG via `canvas.toDataURL()`.
