@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ScanQR — QR Code Generator & Scanner</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="brand">
+    <span class="brand-icon">▦</span>
+    <span class="brand-name">ScanQR</span>
+  </div>
+  <p class="tagline">Generate and scan QR codes entirely in your browser.</p>
+</header>
+
+<main class="container">
+
+  <div class="tabs">
+    <button class="tab-btn active" data-tab="generate">Generate</button>
+    <button class="tab-btn" data-tab="scan">Scan</button>
+  </div>
+
+  <!-- GENERATE TAB -->
+  <section id="generateTab" class="tab-panel active">
+    <div class="card">
+      <label for="qrInput">Text or URL</label>
+      <textarea id="qrInput" rows="3" placeholder="Enter text, URL, Wi-Fi info, contact card..."></textarea>
+
+      <div class="control-row two-col">
+        <div>
+          <label for="qrSize">Size (px)</label>
+          <select id="qrSize">
+            <option value="200">200 × 200</option>
+            <option value="300" selected>300 × 300</option>
+            <option value="400">400 × 400</option>
+            <option value="512">512 × 512</option>
+          </select>
+        </div>
+        <div>
+          <label for="qrColor">Color</label>
+          <input type="color" id="qrColor" value="#000000">
+        </div>
+      </div>
+
+      <button id="generateBtn" class="btn primary">Generate QR Code</button>
+
+      <div id="qrResult" class="qr-result hidden">
+        <div id="qrCanvasWrap"></div>
+        <button id="downloadQrBtn" class="btn secondary">Download PNG</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- SCAN TAB -->
+  <section id="scanTab" class="tab-panel">
+    <div class="card">
+      <div id="reader"></div>
+      <p class="hint" id="scanHint">Click "Start Camera" to scan a QR code, or upload an image.</p>
+
+      <div class="control-row buttons-row">
+        <button id="startScanBtn" class="btn primary">Start Camera</button>
+        <button id="stopScanBtn" class="btn secondary hidden">Stop Camera</button>
+      </div>
+
+      <div class="control-row">
+        <label for="qrFileInput">Or upload a QR image</label>
+        <input type="file" id="qrFileInput" accept="image/*">
+      </div>
+
+      <div id="scanResultBox" class="scan-result hidden">
+        <h3>Result</h3>
+        <p id="scanResultText"></p>
+        <button id="copyResultBtn" class="btn secondary">Copy</button>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <p>Built with vanilla HTML, CSS & JS — QR generation via <code>qrcode</code>, scanning via <code>html5-qrcode</code>.</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/qrcode@1.5.3/build/qrcode.min.js"></script>
+<script src="https://unpkg.com/html5-qrcode@2.3.8/html5-qrcode.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
