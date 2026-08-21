@@ -27,7 +27,7 @@ ScanQR lets you type any text, URL, or data string and instantly generate a down
 
 ## Getting Started
 
-No installation or build step required.
+No installation or build step required
 
 ```bash
 git clone https://github.com/<your-username>/scanqr.git
