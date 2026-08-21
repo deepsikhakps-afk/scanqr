@@ -31,7 +31,7 @@ No installation or build step required.
 
 ```bash
 git clone https://github.com/<your-username>/scanqr.git
-cd scanqr
+cd scanq
 ```
 
 Open `index.html` directly in your browser, or serve it locally:
