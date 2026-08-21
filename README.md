@@ -65,7 +65,7 @@ scanqr/
 └── README.md
 ```
 # screenshot
-![alt text](image.png
+![alt text](image.png)
 
 ## How It Works
 
