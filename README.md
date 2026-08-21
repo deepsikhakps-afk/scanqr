@@ -17,7 +17,7 @@ ScanQR lets you type any text, URL, or data string and instantly generate a down
 - 🖼️ Scan QR codes from an uploaded image file
 - 📋 One-click copy of scanned result
 - 🌗 Clean dark-themed, responsive UI
-- 🚫 No backend — works fully client-
+- 🚫 No backend — works fully client-side
 
 ## Tech Stack
 
