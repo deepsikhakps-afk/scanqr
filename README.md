@@ -23,7 +23,7 @@ ScanQR lets you type any text, URL, or data string and instantly generate a down
 
 - HTML5 / CSS3 / Vanilla JavaScript
 - [`qrcode`](https://github.com/soldair/node-qrcode) (QR generation via Canvas)
-- [`html5-qrcode`](https://github.com/mebjas/html5-qrcode) (camera & image scanning)
+- [`html5-qrcode`](https://github.com/mebjas/html5-qrcode) 
 
 ## Getting Started
 
