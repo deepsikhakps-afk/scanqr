@@ -69,7 +69,7 @@ scanqr/
 
 ## How It Works
 
-- **Generate:** the `qrcode` library  the QR matrix directly onto a `<canvas>`, styled with your chosen color/size, exportable as PNG via `canvas.toDataURL()`.
+- **Generate:** the `qrcode` library renders the QR matrix directly onto a `<canvas>`, styled with your chosen color/size, exportable as PNG via `canvas.toDataURL()`.
 - **Scan:** `html5-qrcode` accesses the device camera via `getUserMedia` and decodes frames in real time, or decodes a QR pattern from a static uploaded image.
 
 ## License
